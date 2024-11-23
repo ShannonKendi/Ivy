@@ -16,7 +16,7 @@ class CountriesController extends BaseController
     {
         $products = Country::all();
 
-        return $this->sendResponse(ResourcesCountry::collection($products), "conuntries retrieved");
+        return $this->sendResponse(ResourcesCountry::collection($products), "countries retrieved");
     }
 
     /**

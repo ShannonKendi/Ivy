@@ -7,6 +7,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class Country extends JsonResource
 {
+
     /**
      * Transform the resource into an array.
      *
@@ -17,6 +18,7 @@ class Country extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'flag' => country_flag($this->iso2)
 
         ];
     }
